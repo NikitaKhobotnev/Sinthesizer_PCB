@@ -1,0 +1,3 @@
+Added Pin To Net: NetName=GND Pin=C22-1
+Added Pin To Net: NetName=+3.3V Pin=C22-2
+Added Member To Class: ClassName=Synthesizer Member=Component C22 Capacitors

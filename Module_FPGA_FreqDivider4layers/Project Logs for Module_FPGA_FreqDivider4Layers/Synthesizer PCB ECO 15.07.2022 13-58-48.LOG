@@ -1,0 +1,10 @@
+Added Pin To Net: NetName=GND Pin=C42-1
+Added Pin To Net: NetName=+6V Pin=C42-2
+Added Pin To Net: NetName=+5V Pin=C43-1
+Added Pin To Net: NetName=GND Pin=C43-2
+Added Pin To Net: NetName=+6V Pin=DA1-1
+Added Pin To Net: NetName=GND Pin=DA1-2
+Added Pin To Net: NetName=+5V Pin=DA1-3
+Added Member To Class: ClassName=Synthesizer Member=Component C42 VJ0805Y104KXBTW1BC
+Added Member To Class: ClassName=Synthesizer Member=Component C43 Capacitor Polarized
+Added Member To Class: ClassName=Synthesizer Member=Component DA1 LF50ABDT-TR

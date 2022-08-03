@@ -1,0 +1,233 @@
+Removed Pin From Net: NetName=MUXOUT Pin=XP2-a14
+Change Component Comment : Designator=R13 Old Comment=Не паять New Comment=X
+Change Component Comment : Designator=R15 Old Comment=Не паять New Comment=X
+Add Component: Footprint Not Found 0603R-0R
+Add Component: Footprint Not Found 0603R-0R
+Add Component: Footprint Not Found 0603R-0R
+Added Component: Designator=VD1(DO-214AC (SMA) - unipolar)
+Add component (AddParameter): Name = "Average Rectified Current"; Value = "1A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case/Package"; Value = "SMA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Диоды"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://ru.mouser.com/datasheet/2/389/cd00001323-1795781.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Plating"; Value = "Tin,Matte"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "1A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Element Configuration"; Value = "Single"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Forward Current"; Value = "1A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Forward Voltage"; Value = "395mV"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "2.03mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Free"; Value = "Lead Free"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "4.6mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "STMicroelectronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "STPS1L30A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Forward Surge Current (Ifsm)"; Value = "75A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "150°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Repetitive Reverse Voltage (Vrrm)"; Value = "30V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Reverse Current"; Value = "200uA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Reverse Leakage Current"; Value = "200uA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Reverse Voltage (DC)"; Value = "30V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Surge Current"; Value = "75A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-65°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Output Current"; Value = "1A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Peak Non-Repetitive Surge Current"; Value = "75A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Polarity"; Value = "Standard"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating (DC)"; Value = "30V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "2.95mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Разрабочик"; Value = "Леткин Д.С."; VariantName = "[No Variations]"
+Added Component: Designator=VD2(DO-214AC (SMA) - unipolar)
+Add component (AddParameter): Name = "Average Rectified Current"; Value = "1A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case/Package"; Value = "SMA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Диоды"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://ru.mouser.com/datasheet/2/389/cd00001323-1795781.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Plating"; Value = "Tin,Matte"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "1A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Element Configuration"; Value = "Single"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Forward Current"; Value = "1A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Forward Voltage"; Value = "395mV"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "2.03mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Free"; Value = "Lead Free"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "4.6mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "STMicroelectronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "STPS1L30A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Forward Surge Current (Ifsm)"; Value = "75A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "150°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Repetitive Reverse Voltage (Vrrm)"; Value = "30V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Reverse Current"; Value = "200uA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Reverse Leakage Current"; Value = "200uA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Reverse Voltage (DC)"; Value = "30V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Surge Current"; Value = "75A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-65°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Output Current"; Value = "1A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Peak Non-Repetitive Surge Current"; Value = "75A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Polarity"; Value = "Standard"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating (DC)"; Value = "30V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "2.95mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Разрабочик"; Value = "Леткин Д.С."; VariantName = "[No Variations]"
+Added Component: Designator=XW2(J01151A0201)
+Add component (AddParameter): Name = "Category"; Value = "Разъёмы"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "https://www.alliedelec.com/m/d/98f426e0d5bb6ee5532bde4cab502770.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.alliedelec.com/m/d/98f426e0d5bb6ee5532bde4cab502770.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "https://www.alliedelec.com/-j01151a0201/70884022/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.alliedelec.com/-j01151a0201/70884022/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Telegartner"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "J01151A0201"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=11.2500 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "509"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Allied"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "70884022"; VariantName = "[No Variations]"
+Added Component: Designator=XW3(J01151A0201)
+Add component (AddParameter): Name = "Category"; Value = "Разъёмы"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "https://www.alliedelec.com/m/d/98f426e0d5bb6ee5532bde4cab502770.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.alliedelec.com/m/d/98f426e0d5bb6ee5532bde4cab502770.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "https://www.alliedelec.com/-j01151a0201/70884022/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.alliedelec.com/-j01151a0201/70884022/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Telegartner"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "J01151A0201"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=11.2500 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "509"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Allied"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "70884022"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+3.3V Pin=C29-1
+Added Pin To Net: NetName=GND Pin=C29-2
+Added Pin To Net: NetName=GND Pin=C30-1
+Added Pin To Net: NetName=+3.3V Pin=C30-2
+Added Pin To Net: NetName=GND Pin=C31-1
+Added Pin To Net: NetName=+3.3V Pin=C31-2
+Added Pin To Net: NetName=+3.3V Pin=C32-1
+Added Pin To Net: NetName=GND Pin=C32-2
+Added Pin To Net: NetName=GND Pin=C36-2
+Added Pin To Net: NetName=GND Pin=C37-1
+Added Pin To Net: NetName=GND Pin=C38-1
+Added Pin To Net: NetName=GND Pin=C39-1
+Added Pin To Net: NetName=GND Pin=C40-1
+Added Pin To Net: NetName=GND Pin=C41-1
+Added Pin To Net: NetName=DATA Pin=DD4-7
+Added Pin To Net: NetName=CLK Pin=DD4-8
+Added Pin To Net: NetName=GND Pin=DD4-17
+Added Pin To Net: NetName=+3.3V Pin=L3-2
+Added Pin To Net: NetName=+3.3V Pin=L4-2
+Add Pin To Net: Unknown Pin: Pin R10-1
+Add Pin To Net: Unknown Pin: Pin R11-1
+Add Pin To Net: Unknown Pin: Pin R12-1
+Added Pin To Net: NetName=+3.3V Pin=R13-2
+Added Pin To Net: NetName=GND Pin=R15-1
+Added Pin To Net: NetName=GND Pin=U2-5
+Added Pin To Net: NetName=MUXOUT Pin=VD1-2
+Added Pin To Net: NetName=GND Pin=XW2-2
+Added Pin To Net: NetName=GND Pin=XW2-2
+Added Pin To Net: NetName=GND Pin=XW2-2
+Added Pin To Net: NetName=GND Pin=XW2-2
+Added Pin To Net: NetName=GND Pin=XW3-2
+Added Pin To Net: NetName=GND Pin=XW3-2
+Added Pin To Net: NetName=GND Pin=XW3-2
+Added Pin To Net: NetName=GND Pin=XW3-2
+Added Pin To Net: NetName=+5V Pin=C37-2
+Added Pin To Net: NetName=+5V Pin=C38-2
+Added Pin To Net: NetName=+5V Pin=C41-2
+Added Pin To Net: NetName=+5V Pin=DD4-16
+Added Pin To Net: NetName=+5V Pin=U2-8
+Added Net: Name=+5V
+Added Pin To Net: NetName=CS Pin=DD4-9
+Added Pin To Net: NetName=CS Pin=XP2-a11
+Added Net: Name=CS
+Added Pin To Net: NetName=DIV_N Pin=DD4-10
+Added Pin To Net: NetName=DIV_N Pin=U2-3
+Added Net: Name=DIV_N
+Added Pin To Net: NetName=DIV_P Pin=DD4-11
+Added Pin To Net: NetName=DIV_P Pin=U2-2
+Added Net: Name=DIV_P
+Added Pin To Net: NetName=GPO Pin=DD4-6
+Added Pin To Net: NetName=GPO Pin=VD2-2
+Added Net: Name=GPO
+Added Pin To Net: NetName=NetC35_1 Pin=C35-1
+Added Pin To Net: NetName=NetC35_1 Pin=C39-2
+Added Pin To Net: NetName=NetC35_1 Pin=C40-2
+Added Pin To Net: NetName=NetC35_1 Pin=DD4-12
+Added Net: Name=NetC35_1
+Added Pin To Net: NetName=NetC35_2 Pin=C35-2
+Added Pin To Net: NetName=NetC35_2 Pin=DD4-14
+Added Net: Name=NetC35_2
+Added Pin To Net: NetName=NetC36_1 Pin=C36-1
+Added Pin To Net: NetName=NetC36_1 Pin=DD4-15
+Added Net: Name=NetC36_1
+Added Pin To Net: NetName=NetDD4_1 Pin=DD4-1
+Added Net: Name=NetDD4_1
+Added Pin To Net: NetName=NetDD4_4 Pin=DD4-4
+Added Net: Name=NetDD4_4
+Added Pin To Net: NetName=NetDD4_5 Pin=DD4-5
+Added Net: Name=NetDD4_5
+Added Pin To Net: NetName=NetDD4_13 Pin=DD4-13
+Added Pin To Net: NetName=NetDD4_13 Pin=R13-1
+Added Pin To Net: NetName=NetDD4_13 Pin=R14-1
+Added Pin To Net: NetName=NetDD4_13 Pin=R15-2
+Added Net: Name=NetDD4_13
+Added Pin To Net: NetName=NetR14_2 Pin=R14-2
+Added Pin To Net: NetName=NetR14_2 Pin=XW3-1
+Added Net: Name=NetR14_2
+Added Pin To Net: NetName=NetU2_7 Pin=U2-7
+Added Pin To Net: NetName=NetU2_7 Pin=XW2-1
+Added Net: Name=NetU2_7
+Added Pin To Net: NetName=NetVD1_1 Pin=VD1-1
+Added Pin To Net: NetName=NetVD1_1 Pin=VD2-1
+Added Pin To Net: NetName=NetVD1_1 Pin=XP2-a14
+Added Net: Name=NetVD1_1
+Added Pin To Net: NetName=RFOutB1_N Pin=C34-2
+Added Pin To Net: NetName=RFOutB1_N Pin=DD4-2
+Added Net: Name=RFOutB1_N
+Added Pin To Net: NetName=RFOutB1_P Pin=C33-2
+Added Pin To Net: NetName=RFOutB1_P Pin=DD4-3
+Added Net: Name=RFOutB1_P
+Added Pin To Net: NetName=RFOutB_N Pin=C34-1
+Added Pin To Net: NetName=RFOutB_N Pin=DD1-15
+Added Pin To Net: NetName=RFOutB_N Pin=L4-1
+Added Net: Name=RFOutB_N
+Added Pin To Net: NetName=RFOutB_P Pin=C33-1
+Added Pin To Net: NetName=RFOutB_P Pin=DD1-14
+Added Pin To Net: NetName=RFOutB_P Pin=L3-1
+Added Net: Name=RFOutB_P
+Added Differential Pair: Name=DIV
+Added Differential Pair: Name=RFOutB1
+Added Differential Pair: Name=RFOutB
+Added Member To Class: ClassName=Synthesizer Member=Component C29 Capacitors
+Added Member To Class: ClassName=Synthesizer Member=Component C30 Capacitors
+Added Member To Class: ClassName=Synthesizer Member=Component C31 Capacitors
+Added Member To Class: ClassName=Synthesizer Member=Component C32 Capacitors
+Added Member To Class: ClassName=Synthesizer Member=Component C33 Capacitors
+Added Member To Class: ClassName=Synthesizer Member=Component C34 Capacitors
+Added Member To Class: ClassName=Synthesizer Member=Component C35 Capacitors
+Added Member To Class: ClassName=Synthesizer Member=Component C36 Capacitors
+Added Member To Class: ClassName=Synthesizer Member=Component C37 Capacitors
+Added Member To Class: ClassName=Synthesizer Member=Component C38 Capacitors
+Added Member To Class: ClassName=Synthesizer Member=Component C39 Capacitors
+Added Member To Class: ClassName=Synthesizer Member=Component C40 Capacitors
+Added Member To Class: ClassName=Synthesizer Member=Component C41 Capacitors
+Added Member To Class: ClassName=Synthesizer Member=Component DD4 HMC988LP3E
+Added Member To Class: ClassName=Synthesizer Member=Component L3 0603HP-18NXJE
+Added Member To Class: ClassName=Synthesizer Member=Component L4 0603HP-18NXJE
+Add Class Member: Failed to add class member : Component R10 10k
+Add Class Member: Failed to add class member : Component R11 10k
+Add Class Member: Failed to add class member : Component R12 10k
+Added Member To Class: ClassName=Synthesizer Member=Component R13 X
+Added Member To Class: ClassName=Synthesizer Member=Component R14 0
+Added Member To Class: ClassName=Synthesizer Member=Component R15 X
+Added Member To Class: ClassName=Synthesizer Member=Component U2 SN65ELT21D
+Added Member To Class: ClassName=Synthesizer Member=Component VD1 STPS1L30A
+Added Member To Class: ClassName=Synthesizer Member=Component VD2 STPS1L30A
+Added Member To Class: ClassName=Synthesizer Member=Component XW2 J01151A0201
+Added Member To Class: ClassName=Synthesizer Member=Component XW3 J01151A0201
+Added Member To Class: ClassName=50_Om Member=Wire DIV_N
+Added Member To Class: ClassName=50_Om Member=Wire DIV_P
+Added Member To Class: ClassName=50_Om Member=Wire NetDD4_13
+Added Member To Class: ClassName=50_Om Member=Wire NetR14_2
+Added Member To Class: ClassName=50_Om Member=Wire NetU2_7
+Added Member To Class: ClassName=50_Om Member=Wire RFOutB_N
+Added Member To Class: ClassName=50_Om Member=Wire RFOutB_P

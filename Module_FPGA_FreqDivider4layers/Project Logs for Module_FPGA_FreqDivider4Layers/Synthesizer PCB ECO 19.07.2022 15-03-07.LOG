@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=SYNC Pin=XP2-a8
+Added Pin To Net: NetName=SYNC Pin=XP2-a10
+Added Member To Class: ClassName=Synthesizer Member=Component DD4 HMC988LP3E
+Added Room: Name=Synthesizer

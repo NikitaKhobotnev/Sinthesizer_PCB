@@ -1,0 +1,7 @@
+Change Component Footprint: Designator=R? Old Footprint=Resistor MLT 0.5W Horizontal New Footprint=SQP500JB
+Change Component Comment : Designator=R? Old Comment=Resistor New Comment=SQP500JB
+Change component parameters: Designator = "R?" ("R?"); Footprint = "Resistor MLT 0.5W Horizontal"; UniqueID = "\JRYJRXEL" ("\JRYJRXEL")
+Change component parameters (AddParameter): Name = "Category"; Value = "Резисторы"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "yageo"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "±10%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "1k"; VariantName = "[No Variations]"

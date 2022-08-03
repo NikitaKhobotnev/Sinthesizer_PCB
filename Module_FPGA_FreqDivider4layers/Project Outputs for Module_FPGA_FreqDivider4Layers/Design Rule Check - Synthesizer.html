@@ -1,0 +1,575 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 9em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD22\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">21.07.2022</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">13:50:58</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:05</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc" class="file"><acronym title="C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc">C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">57</td></tr>
+</table>
+</td>
+</table><a name="IDA1C45OSIVYBDMEG3CSGW50PQMKBBDURFCXPTCZKUZPFWZ5MLDZBD"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDXAMR50U1QAHWNZQMGYBMQMVWZKC1LYZQOTIYUOISJE3VPVIRILH">Clearance Constraint (Gap=0.25mm) (InNet('+5V')),(InNet('GND'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDCEJMW1BHHM1KB3GHPE3CI2H0YO3M0O2GG3JLXOXL3FPN04OSCTP">Clearance Constraint (Gap=0.2mm) (InNet('+3.3V') AND OnLayer('Top') And InComponent('DD1')),((InNamedPolygon('Top-GND')or InNet('GND'))  AND OnLayer('Top'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID4FLHPP1PKI1CJF4LOMYFEA04KYN4ZDZYPSZBRIRBF5ATWCA5Q">Clearance Constraint (Gap=0.2mm) ((InNamedUnion('Unions') AND InNet('+3.3V'))),((InNamedUnion('Unions') AND InNet('GND')))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID4MJZW0NXAAURNOU0Y3VBUZFN5P2Z0WBC5R1CRW5LD1BIPKKDFOI">Clearance Constraint (Gap=0.3mm) (InNet('+6V')),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDCTWWTKMZXV0KKROHT4EQKUXGYE4KJ5BJFLSSJ0P0OZWXVQTGVR3O">Clearance Constraint (Gap=0.3mm) (InNet('+3.3V')),(InNet('GND'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDHPQN2OZPSI3QJ1WR5GSKC1KVJEVJEI1OZCHEN5G5D0ANKQWDBFVK">Clearance Constraint (Gap=0.17mm) (InComponent('DD4')Or InComponent('DD7')),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDLX4CNNXDMD55PVFK4WOM2KKKABRAMHXYUCLWUNKPETAFR2ZXBZ5D">Clearance Constraint (Gap=0.2mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDSS2JP0PZSWRHMOZVZAR2SB1OZMBVGXXRMRKIL0OIAQSNFCQVJABN">Clearance Constraint (Gap=0.2mm) (Disabled)(All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDK2OXCNJTNWTBEIXJVBV1EYYNJOKDJ0ZQIRH2YFMOKQ4AE1HMCGHI">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID2WOU3GVJKEJ3HSIKN2PPHPOITEPP5EIALESCKUOIIT1PDH5ME1AK">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDFEPRU5JDNL1APROPR12WSHUP0P4YDSNEGMJTXSIETHFV2YQB4MM">Width Constraint (Min=0.1mm) (Max=10mm) (Preferred=0.125mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDC05KSLDEAMC5CSWW3TGITY0JHMXRTAHU12CTOUNICEKT3TVUQ1ZC">Width Constraint (Min=0.15mm) (Max=10mm) (Preferred=0.2mm) (Disabled)(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDL5YBCNEKXNHTFV4B3J01WJHXDHYFUA2LWRRVW5PM1LHWVYI2VWTD">Routing Layers(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDLH1SO5UT2P1HHTSODU4JY2VASOGDEFMYUKWMKOLY2LBHXAVCXQP">Routing Via (MinHoleWidth=0.2mm) (MaxHoleWidth=5.9mm) (PreferredHoleWidth=0.3mm) (MinWidth=0.4mm) (MaxWidth=6.4mm) (PreferedWidth=0.6mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDDR1NGKB505TQOHS44GX3KQQ2MN2TGZRYF1KV0VOOSUO4EVWOAOUE">Differential Pairs Uncoupled Length using the Gap Constraints (Min=0.125mm) (Max=0.254mm) (Prefered=0.254mm)  and Width Constraints (Min=0.125mm) (Max=0.381mm) (Prefered=0.381mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDLOP2DN33AYTICVLXT2P3TXHI4PETTGH0C5HXB4NQXONPVYH54QID">Differential Pairs Uncoupled Length using the Gap Constraints (Min=0.23mm) (Max=0.254mm) (Prefered=0.23mm)  and Width Constraints (Min=0.26mm) (Max=0.26mm) (Prefered=0.26mm) (Disabled)(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDBWMYV2MGC1FDN4QGK0ER0RPVPIKH2LVXGREPK4YZMZZHMWMQT5J">Power Plane Connect Rule(Relief Connect )(Expansion=0.2mm) (Conductor Width=0.2mm) (Air Gap=0.2mm) (Entries=4) (Disabled)(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDMDLIJOUYYRDENQZUE3HNK2L4MKXXP03MFMR4D1ZFGR1F1VGE53G">Power Plane Connect Rule(Relief Connect )(Expansion=0.15mm) (Conductor Width=0.15mm) (Air Gap=0.15mm) (Entries=4) (Disabled)(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID5Z3VAF0UBX2MBAJ0S4RMRB3M3BPYTQQNC35WZLOJQ2V1KLM0NKJ">Power Plane Connect Rule(Direct Connect )(Expansion=0.15mm) (Conductor Width=0.2mm) (Air Gap=0.2mm) (Entries=4) (Disabled)(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDUN0UHDV2J3B4KLO4LHQHRPAHRK4Q2CDKDPBHE2KBO1U0TB3DJEPE">Power Plane Connect Rule(Relief Connect )(Expansion=0.2mm) (Conductor Width=0.2mm) (Air Gap=0.2mm) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDCSJPJCA3IIZNGIUEFTSTLVEGRB5DMRC2GK2SYNGIE0RXBM0LZRG">Hole Size Constraint (Min=0.3mm) (Max=5.9mm) (IsVia)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDUGB3NKSCAJDFDWBVXJKGGSZRFGUJHT2QMMSVCSOIE4Q4AH5LTS5E">Hole Size Constraint (Min=0.2mm) (Max=5.9mm) (Disabled)(IsVia)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID01PSOKLC1GZRKY3OYPP4CUF34H5FGXMLOC1EYMEQHRZBDUUD3TTG">Hole Size Constraint (Min=0.6mm) (Max=5.9mm) (IsPad)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDEPTKM3S333C2I0ALYUDFSAHJFDCI2ZWX3ECG4ZHI4PQZA4MTIAFB">Pads and Vias to follow the Drill pairs settings</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDBVYE2BWY0CUBDF3W1IDDD4U2IPYCNSCLWYAIGFY53BPTVP4OOTD">Hole To Hole Clearance (Gap=0.25mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDXNWMSI3YQF5GEI5GZJYY3B5HRGMCO5KVZIAPI0CDTQXACJWTXKBN">Minimum Solder Mask Sliver (Gap=0.1mm) (Disabled)(All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDRISIU4XHZHGHDTS00CFNGX53UN1PP2EQWJDV5FCHF2JPQ0T5A4SH">Minimum Solder Mask Sliver (Gap=0.14mm) (All),(All)</a></td>
+<td class="column2">57</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDWCYKRRZ2UPXDILBNA4R121KRVNLCAKOCGZNCDQO3GIOKCU5L1UFK">Silk To Solder Mask (Clearance=0.15mm) (Disabled)(IsPad),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID01S5YE5E3HBBOREUHJU21RROIH4FI13G3JHATULOVFZB0XA5SV3D">Silk to Silk (Clearance=0.15mm) (Disabled)(All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDS3DBAQUM2X3TMBV0MYOGCS43KEPJ5OXUCVGVFBOC4GQILYHRR30F">Net Antennae (Tolerance=0mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDL4K32LQLRBSVFLENEPBXNUAQRJF11HI1M2CJQMGREIAW3BKOIV2G">Component Clearance Constraint ( Horizontal Gap = 0.254mm, Vertical Gap = 0.254mm ) (All),(All) </a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDZ4405TLIXQGFLJQ0PYQHHGVC5ORYSUF54HVH30F0PLORVXKGUZ0B">Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">57</td>
+</tr>
+</table><br><a name="IDRISIU4XHZHGHDTS00CFNGX53UN1PP2EQWJDV5FCHF2JPQ0T5A4SH"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Minimum Solder Mask Sliver (Gap=0.14mm) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37793.591mil|Location2.X=37800.353mil|Location1.Y=28739.852mil|Location2.Y=28746.613mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37793.591mil|Location2.X=37800.353mil|Location1.Y=28739.852mil|Location2.Y=28746.613mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.046mm &lt; 0.14mm) Between Pad DD1-1(39.933mm,49.832mm) on Top And Pad DD1-2(39.433mm,49.832mm) on Top [Top Solder] Mask Sliver [0.046mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37812.784mil|Location2.X=37820.525mil|Location1.Y=28739.438mil|Location2.Y=28747.25mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37812.784mil|Location2.X=37820.525mil|Location1.Y=28739.438mil|Location2.Y=28747.25mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.03mm &lt; 0.14mm) Between Pad DD1-1(39.933mm,49.832mm) on Top And Pad DD1-32(40.683mm,49.082mm) on Top [Top Solder] Mask Sliver [0.03mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37655.875mil|Location2.X=37662.637mil|Location1.Y=28700.56mil|Location2.Y=28707.322mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37655.875mil|Location2.X=37662.637mil|Location1.Y=28700.56mil|Location2.Y=28707.322mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.046mm &lt; 0.14mm) Between Pad DD1-10(35.683mm,48.582mm) on Top And Pad DD1-11(35.683mm,48.082mm) on Top [Top Solder] Mask Sliver [0.046mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37655.875mil|Location2.X=37662.637mil|Location1.Y=28720.245mil|Location2.Y=28727.007mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37655.875mil|Location2.X=37662.637mil|Location1.Y=28720.245mil|Location2.Y=28727.007mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.046mm &lt; 0.14mm) Between Pad DD1-10(35.683mm,48.582mm) on Top And Pad DD1-9(35.683mm,49.082mm) on Top [Top Solder] Mask Sliver [0.046mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37655.875mil|Location2.X=37662.637mil|Location1.Y=28680.875mil|Location2.Y=28687.637mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37655.875mil|Location2.X=37662.637mil|Location1.Y=28680.875mil|Location2.Y=28687.637mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.046mm &lt; 0.14mm) Between Pad DD1-11(35.683mm,48.082mm) on Top And Pad DD1-12(35.683mm,47.582mm) on Top [Top Solder] Mask Sliver [0.046mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37655.875mil|Location2.X=37662.637mil|Location1.Y=28661.19mil|Location2.Y=28667.952mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37655.875mil|Location2.X=37662.637mil|Location1.Y=28661.19mil|Location2.Y=28667.952mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.046mm &lt; 0.14mm) Between Pad DD1-12(35.683mm,47.582mm) on Top And Pad DD1-13(35.683mm,47.082mm) on Top [Top Solder] Mask Sliver [0.046mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37655.875mil|Location2.X=37662.637mil|Location1.Y=28641.505mil|Location2.Y=28648.267mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37655.875mil|Location2.X=37662.637mil|Location1.Y=28641.505mil|Location2.Y=28648.267mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.046mm &lt; 0.14mm) Between Pad DD1-13(35.683mm,47.082mm) on Top And Pad DD1-14(35.683mm,46.582mm) on Top [Top Solder] Mask Sliver [0.046mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37655.875mil|Location2.X=37662.637mil|Location1.Y=28621.82mil|Location2.Y=28628.582mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37655.875mil|Location2.X=37662.637mil|Location1.Y=28621.82mil|Location2.Y=28628.582mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.046mm &lt; 0.14mm) Between Pad DD1-14(35.683mm,46.582mm) on Top And Pad DD1-15(35.683mm,46.082mm) on Top [Top Solder] Mask Sliver [0.046mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37655.875mil|Location2.X=37662.637mil|Location1.Y=28602.135mil|Location2.Y=28608.897mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37655.875mil|Location2.X=37662.637mil|Location1.Y=28602.135mil|Location2.Y=28608.897mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.046mm &lt; 0.14mm) Between Pad DD1-15(35.683mm,46.082mm) on Top And Pad DD1-16(35.683mm,45.582mm) on Top [Top Solder] Mask Sliver [0.046mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37656.288mil|Location2.X=37664.029mil|Location1.Y=28582.942mil|Location2.Y=28590.754mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37656.288mil|Location2.X=37664.029mil|Location1.Y=28582.942mil|Location2.Y=28590.754mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.03mm &lt; 0.14mm) Between Pad DD1-16(35.683mm,45.582mm) on Top And Pad DD1-17(36.433mm,44.832mm) on Top [Top Solder] Mask Sliver [0.03mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37675.481mil|Location2.X=37682.243mil|Location1.Y=28582.529mil|Location2.Y=28589.29mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37675.481mil|Location2.X=37682.243mil|Location1.Y=28582.529mil|Location2.Y=28589.29mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.046mm &lt; 0.14mm) Between Pad DD1-17(36.433mm,44.832mm) on Top And Pad DD1-18(36.933mm,44.832mm) on Top [Top Solder] Mask Sliver [0.046mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37695.166mil|Location2.X=37701.928mil|Location1.Y=28582.529mil|Location2.Y=28589.29mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37695.166mil|Location2.X=37701.928mil|Location1.Y=28582.529mil|Location2.Y=28589.29mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.046mm &lt; 0.14mm) Between Pad DD1-18(36.933mm,44.832mm) on Top And Pad DD1-19(37.433mm,44.832mm) on Top [Top Solder] Mask Sliver [0.046mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37714.851mil|Location2.X=37721.613mil|Location1.Y=28582.529mil|Location2.Y=28589.29mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37714.851mil|Location2.X=37721.613mil|Location1.Y=28582.529mil|Location2.Y=28589.29mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.046mm &lt; 0.14mm) Between Pad DD1-19(37.433mm,44.832mm) on Top And Pad DD1-20(37.933mm,44.832mm) on Top [Top Solder] Mask Sliver [0.046mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37773.906mil|Location2.X=37780.668mil|Location1.Y=28739.852mil|Location2.Y=28746.613mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37773.906mil|Location2.X=37780.668mil|Location1.Y=28739.852mil|Location2.Y=28746.613mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.046mm &lt; 0.14mm) Between Pad DD1-2(39.433mm,49.832mm) on Top And Pad DD1-3(38.933mm,49.832mm) on Top [Top Solder] Mask Sliver [0.046mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37734.536mil|Location2.X=37741.298mil|Location1.Y=28582.529mil|Location2.Y=28589.29mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37734.536mil|Location2.X=37741.298mil|Location1.Y=28582.529mil|Location2.Y=28589.29mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.046mm &lt; 0.14mm) Between Pad DD1-20(37.933mm,44.832mm) on Top And Pad DD1-21(38.433mm,44.832mm) on Top [Top Solder] Mask Sliver [0.046mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37754.221mil|Location2.X=37760.983mil|Location1.Y=28582.529mil|Location2.Y=28589.29mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37754.221mil|Location2.X=37760.983mil|Location1.Y=28582.529mil|Location2.Y=28589.29mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.046mm &lt; 0.14mm) Between Pad DD1-21(38.433mm,44.832mm) on Top And Pad DD1-22(38.933mm,44.832mm) on Top [Top Solder] Mask Sliver [0.046mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37773.906mil|Location2.X=37780.668mil|Location1.Y=28582.529mil|Location2.Y=28589.29mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37773.906mil|Location2.X=37780.668mil|Location1.Y=28582.529mil|Location2.Y=28589.29mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.046mm &lt; 0.14mm) Between Pad DD1-22(38.933mm,44.832mm) on Top And Pad DD1-23(39.433mm,44.832mm) on Top [Top Solder] Mask Sliver [0.046mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37793.591mil|Location2.X=37800.353mil|Location1.Y=28582.529mil|Location2.Y=28589.29mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37793.591mil|Location2.X=37800.353mil|Location1.Y=28582.529mil|Location2.Y=28589.29mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.046mm &lt; 0.14mm) Between Pad DD1-23(39.433mm,44.832mm) on Top And Pad DD1-24(39.933mm,44.832mm) on Top [Top Solder] Mask Sliver [0.046mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37812.784mil|Location2.X=37820.596mil|Location1.Y=28581.963mil|Location2.Y=28589.704mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37812.784mil|Location2.X=37820.596mil|Location1.Y=28581.963mil|Location2.Y=28589.704mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.03mm &lt; 0.14mm) Between Pad DD1-24(39.933mm,44.832mm) on Top And Pad DD1-25(40.683mm,45.582mm) on Top [Top Solder] Mask Sliver [0.03mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37813.198mil|Location2.X=37819.96mil|Location1.Y=28602.135mil|Location2.Y=28608.897mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37813.198mil|Location2.X=37819.96mil|Location1.Y=28602.135mil|Location2.Y=28608.897mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.046mm &lt; 0.14mm) Between Pad DD1-25(40.683mm,45.582mm) on Top And Pad DD1-26(40.683mm,46.082mm) on Top [Top Solder] Mask Sliver [0.046mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37813.198mil|Location2.X=37819.96mil|Location1.Y=28621.82mil|Location2.Y=28628.582mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37813.198mil|Location2.X=37819.96mil|Location1.Y=28621.82mil|Location2.Y=28628.582mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.046mm &lt; 0.14mm) Between Pad DD1-26(40.683mm,46.082mm) on Top And Pad DD1-27(40.683mm,46.582mm) on Top [Top Solder] Mask Sliver [0.046mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37813.198mil|Location2.X=37819.96mil|Location1.Y=28641.505mil|Location2.Y=28648.267mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37813.198mil|Location2.X=37819.96mil|Location1.Y=28641.505mil|Location2.Y=28648.267mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.046mm &lt; 0.14mm) Between Pad DD1-27(40.683mm,46.582mm) on Top And Pad DD1-28(40.683mm,47.082mm) on Top [Top Solder] Mask Sliver [0.046mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37813.198mil|Location2.X=37819.96mil|Location1.Y=28661.19mil|Location2.Y=28667.952mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37813.198mil|Location2.X=37819.96mil|Location1.Y=28661.19mil|Location2.Y=28667.952mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.046mm &lt; 0.14mm) Between Pad DD1-28(40.683mm,47.082mm) on Top And Pad DD1-29(40.683mm,47.582mm) on Top [Top Solder] Mask Sliver [0.046mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37813.198mil|Location2.X=37819.96mil|Location1.Y=28680.875mil|Location2.Y=28687.637mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37813.198mil|Location2.X=37819.96mil|Location1.Y=28680.875mil|Location2.Y=28687.637mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.046mm &lt; 0.14mm) Between Pad DD1-29(40.683mm,47.582mm) on Top And Pad DD1-30(40.683mm,48.082mm) on Top [Top Solder] Mask Sliver [0.046mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37754.221mil|Location2.X=37760.983mil|Location1.Y=28739.852mil|Location2.Y=28746.613mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37754.221mil|Location2.X=37760.983mil|Location1.Y=28739.852mil|Location2.Y=28746.613mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.046mm &lt; 0.14mm) Between Pad DD1-3(38.933mm,49.832mm) on Top And Pad DD1-4(38.433mm,49.832mm) on Top [Top Solder] Mask Sliver [0.046mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37813.198mil|Location2.X=37819.96mil|Location1.Y=28700.56mil|Location2.Y=28707.322mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37813.198mil|Location2.X=37819.96mil|Location1.Y=28700.56mil|Location2.Y=28707.322mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.046mm &lt; 0.14mm) Between Pad DD1-30(40.683mm,48.082mm) on Top And Pad DD1-31(40.683mm,48.582mm) on Top [Top Solder] Mask Sliver [0.046mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37813.198mil|Location2.X=37819.96mil|Location1.Y=28720.245mil|Location2.Y=28727.007mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37813.198mil|Location2.X=37819.96mil|Location1.Y=28720.245mil|Location2.Y=28727.007mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.046mm &lt; 0.14mm) Between Pad DD1-31(40.683mm,48.582mm) on Top And Pad DD1-32(40.683mm,49.082mm) on Top [Top Solder] Mask Sliver [0.046mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37734.536mil|Location2.X=37741.298mil|Location1.Y=28739.852mil|Location2.Y=28746.613mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37734.536mil|Location2.X=37741.298mil|Location1.Y=28739.852mil|Location2.Y=28746.613mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.046mm &lt; 0.14mm) Between Pad DD1-4(38.433mm,49.832mm) on Top And Pad DD1-5(37.933mm,49.832mm) on Top [Top Solder] Mask Sliver [0.046mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37714.851mil|Location2.X=37721.613mil|Location1.Y=28739.852mil|Location2.Y=28746.613mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37714.851mil|Location2.X=37721.613mil|Location1.Y=28739.852mil|Location2.Y=28746.613mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.046mm &lt; 0.14mm) Between Pad DD1-5(37.933mm,49.832mm) on Top And Pad DD1-6(37.433mm,49.832mm) on Top [Top Solder] Mask Sliver [0.046mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37695.166mil|Location2.X=37701.928mil|Location1.Y=28739.852mil|Location2.Y=28746.613mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37695.166mil|Location2.X=37701.928mil|Location1.Y=28739.852mil|Location2.Y=28746.613mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.046mm &lt; 0.14mm) Between Pad DD1-6(37.433mm,49.832mm) on Top And Pad DD1-7(36.933mm,49.832mm) on Top [Top Solder] Mask Sliver [0.046mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37675.481mil|Location2.X=37682.243mil|Location1.Y=28739.852mil|Location2.Y=28746.613mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37675.481mil|Location2.X=37682.243mil|Location1.Y=28739.852mil|Location2.Y=28746.613mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.046mm &lt; 0.14mm) Between Pad DD1-7(36.933mm,49.832mm) on Top And Pad DD1-8(36.433mm,49.832mm) on Top [Top Solder] Mask Sliver [0.046mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37656.288mil|Location2.X=37664.1mil|Location1.Y=28738.459mil|Location2.Y=28746.2mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37656.288mil|Location2.X=37664.1mil|Location1.Y=28738.459mil|Location2.Y=28746.2mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.03mm &lt; 0.14mm) Between Pad DD1-8(36.433mm,49.832mm) on Top And Pad DD1-9(35.683mm,49.082mm) on Top [Top Solder] Mask Sliver [0.03mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37447.915mil|Location2.X=37454.677mil|Location1.Y=28652.758mil|Location2.Y=28659.52mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37447.915mil|Location2.X=37454.677mil|Location1.Y=28652.758mil|Location2.Y=28659.52mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.046mm &lt; 0.14mm) Between Pad DD2-1(30.573mm,46.851mm) on Top And Pad DD2-2(31.233mm,46.851mm) on Top [Top Solder] Mask Sliver [0.046mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37473.899mil|Location2.X=37480.661mil|Location1.Y=28652.758mil|Location2.Y=28659.52mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37473.899mil|Location2.X=37480.661mil|Location1.Y=28652.758mil|Location2.Y=28659.52mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.046mm &lt; 0.14mm) Between Pad DD2-2(31.233mm,46.851mm) on Top And Pad DD2-3(31.893mm,46.851mm) on Top [Top Solder] Mask Sliver [0.046mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37473.899mil|Location2.X=37480.661mil|Location1.Y=28691.734mil|Location2.Y=28698.496mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37473.899mil|Location2.X=37480.661mil|Location1.Y=28691.734mil|Location2.Y=28698.496mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.046mm &lt; 0.14mm) Between Pad DD2-4(31.893mm,47.841mm) on Top And Pad DD2-5(31.233mm,47.841mm) on Top [Top Solder] Mask Sliver [0.046mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37447.915mil|Location2.X=37454.677mil|Location1.Y=28691.734mil|Location2.Y=28698.496mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37447.915mil|Location2.X=37454.677mil|Location1.Y=28691.734mil|Location2.Y=28698.496mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.046mm &lt; 0.14mm) Between Pad DD2-5(31.233mm,47.841mm) on Top And Pad DD2-6(30.573mm,47.841mm) on Top [Top Solder] Mask Sliver [0.046mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37421.061mil|Location2.X=37427.823mil|Location1.Y=28670.711mil|Location2.Y=28677.473mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37421.061mil|Location2.X=37427.823mil|Location1.Y=28670.711mil|Location2.Y=28677.473mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.09mm &lt; 0.14mm) Between Pad DD2-6(30.573mm,47.841mm) on Top And Polygon Region (0 hole(s)) Top Solder [Top Solder] Mask Sliver [0.09mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37273.058mil|Location2.X=37279.819mil|Location1.Y=28109.125mil|Location2.Y=28115.887mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37273.058mil|Location2.X=37279.819mil|Location1.Y=28109.125mil|Location2.Y=28115.887mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.102mm &lt; 0.14mm) Between Pad DD4-1(26.716mm,33.907mm) on Top And Pad DD4-17(25.966mm,32.432mm) on Multi-Layer [Top Solder] Mask Sliver [0.102mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37243.703mil|Location2.X=37250.465mil|Location1.Y=28040.011mil|Location2.Y=28046.772mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37243.703mil|Location2.X=37250.465mil|Location1.Y=28040.011mil|Location2.Y=28046.772mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.102mm &lt; 0.14mm) Between Pad DD4-10(25.716mm,30.957mm) on Top And Pad DD4-17(25.966mm,32.432mm) on Multi-Layer [Top Solder] Mask Sliver [0.102mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37263.388mil|Location2.X=37270.15mil|Location1.Y=28040.011mil|Location2.Y=28046.772mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37263.388mil|Location2.X=37270.15mil|Location1.Y=28040.011mil|Location2.Y=28046.772mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.102mm &lt; 0.14mm) Between Pad DD4-11(26.216mm,30.957mm) on Top And Pad DD4-17(25.966mm,32.432mm) on Multi-Layer [Top Solder] Mask Sliver [0.102mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37291.595mil|Location2.X=37299.407mil|Location1.Y=28035.539mil|Location2.Y=28043.28mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37291.595mil|Location2.X=37299.407mil|Location1.Y=28035.539mil|Location2.Y=28043.28mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.103mm &lt; 0.14mm) Between Pad DD4-12(26.716mm,30.957mm) on Top And Pad DD4-13(27.441mm,31.682mm) on Top [Top Solder] Mask Sliver [0.103mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37283.073mil|Location2.X=37289.835mil|Location1.Y=28040.011mil|Location2.Y=28046.772mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37283.073mil|Location2.X=37289.835mil|Location1.Y=28040.011mil|Location2.Y=28046.772mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.102mm &lt; 0.14mm) Between Pad DD4-12(26.716mm,30.957mm) on Top And Pad DD4-17(25.966mm,32.432mm) on Multi-Layer [Top Solder] Mask Sliver [0.102mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37288.103mil|Location2.X=37294.865mil|Location1.Y=28045.04mil|Location2.Y=28051.802mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37288.103mil|Location2.X=37294.865mil|Location1.Y=28045.04mil|Location2.Y=28051.802mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.102mm &lt; 0.14mm) Between Pad DD4-13(27.441mm,31.682mm) on Top And Pad DD4-17(25.966mm,32.432mm) on Multi-Layer [Top Solder] Mask Sliver [0.102mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37288.103mil|Location2.X=37294.865mil|Location1.Y=28064.725mil|Location2.Y=28071.487mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37288.103mil|Location2.X=37294.865mil|Location1.Y=28064.725mil|Location2.Y=28071.487mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.102mm &lt; 0.14mm) Between Pad DD4-14(27.441mm,32.182mm) on Top And Pad DD4-17(25.966mm,32.432mm) on Multi-Layer [Top Solder] Mask Sliver [0.102mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37288.103mil|Location2.X=37294.865mil|Location1.Y=28084.41mil|Location2.Y=28091.172mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37288.103mil|Location2.X=37294.865mil|Location1.Y=28084.41mil|Location2.Y=28091.172mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.102mm &lt; 0.14mm) Between Pad DD4-15(27.441mm,32.682mm) on Top And Pad DD4-17(25.966mm,32.432mm) on Multi-Layer [Top Solder] Mask Sliver [0.102mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37288.103mil|Location2.X=37294.865mil|Location1.Y=28104.095mil|Location2.Y=28110.857mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37288.103mil|Location2.X=37294.865mil|Location1.Y=28104.095mil|Location2.Y=28110.857mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.102mm &lt; 0.14mm) Between Pad DD4-16(27.441mm,33.182mm) on Top And Pad DD4-17(25.966mm,32.432mm) on Multi-Layer [Top Solder] Mask Sliver [0.102mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37263.388mil|Location2.X=37270.15mil|Location1.Y=28109.125mil|Location2.Y=28115.887mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37263.388mil|Location2.X=37270.15mil|Location1.Y=28109.125mil|Location2.Y=28115.887mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.102mm &lt; 0.14mm) Between Pad DD4-17(25.966mm,32.432mm) on Multi-Layer And Pad DD4-2(26.216mm,33.907mm) on Top [Top Solder] Mask Sliver [0.102mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37243.703mil|Location2.X=37250.465mil|Location1.Y=28109.125mil|Location2.Y=28115.887mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37243.703mil|Location2.X=37250.465mil|Location1.Y=28109.125mil|Location2.Y=28115.887mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.102mm &lt; 0.14mm) Between Pad DD4-17(25.966mm,32.432mm) on Multi-Layer And Pad DD4-3(25.716mm,33.907mm) on Top [Top Solder] Mask Sliver [0.102mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37224.018mil|Location2.X=37230.78mil|Location1.Y=28109.125mil|Location2.Y=28115.887mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37224.018mil|Location2.X=37230.78mil|Location1.Y=28109.125mil|Location2.Y=28115.887mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.102mm &lt; 0.14mm) Between Pad DD4-17(25.966mm,32.432mm) on Multi-Layer And Pad DD4-4(25.216mm,33.907mm) on Top [Top Solder] Mask Sliver [0.102mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37218.989mil|Location2.X=37225.751mil|Location1.Y=28104.095mil|Location2.Y=28110.857mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37218.989mil|Location2.X=37225.751mil|Location1.Y=28104.095mil|Location2.Y=28110.857mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.102mm &lt; 0.14mm) Between Pad DD4-17(25.966mm,32.432mm) on Multi-Layer And Pad DD4-5(24.491mm,33.182mm) on Top [Top Solder] Mask Sliver [0.102mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37218.989mil|Location2.X=37225.751mil|Location1.Y=28084.41mil|Location2.Y=28091.172mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37218.989mil|Location2.X=37225.751mil|Location1.Y=28084.41mil|Location2.Y=28091.172mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.102mm &lt; 0.14mm) Between Pad DD4-17(25.966mm,32.432mm) on Multi-Layer And Pad DD4-6(24.491mm,32.682mm) on Top [Top Solder] Mask Sliver [0.102mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37218.989mil|Location2.X=37225.751mil|Location1.Y=28064.725mil|Location2.Y=28071.487mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37218.989mil|Location2.X=37225.751mil|Location1.Y=28064.725mil|Location2.Y=28071.487mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.102mm &lt; 0.14mm) Between Pad DD4-17(25.966mm,32.432mm) on Multi-Layer And Pad DD4-7(24.491mm,32.182mm) on Top [Top Solder] Mask Sliver [0.102mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37218.989mil|Location2.X=37225.751mil|Location1.Y=28045.04mil|Location2.Y=28051.802mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37218.989mil|Location2.X=37225.751mil|Location1.Y=28045.04mil|Location2.Y=28051.802mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.102mm &lt; 0.14mm) Between Pad DD4-17(25.966mm,32.432mm) on Multi-Layer And Pad DD4-8(24.491mm,31.682mm) on Top [Top Solder] Mask Sliver [0.102mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37224.018mil|Location2.X=37230.78mil|Location1.Y=28040.011mil|Location2.Y=28046.772mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37224.018mil|Location2.X=37230.78mil|Location1.Y=28040.011mil|Location2.Y=28046.772mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.102mm &lt; 0.14mm) Between Pad DD4-17(25.966mm,32.432mm) on Multi-Layer And Pad DD4-9(25.216mm,30.957mm) on Top [Top Solder] Mask Sliver [0.102mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37215.497mil|Location2.X=37223.308mil|Location1.Y=28111.638mil|Location2.Y=28119.379mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37215.497mil|Location2.X=37223.308mil|Location1.Y=28111.638mil|Location2.Y=28119.379mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.103mm &lt; 0.14mm) Between Pad DD4-4(25.216mm,33.907mm) on Top And Pad DD4-5(24.491mm,33.182mm) on Top [Top Solder] Mask Sliver [0.103mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37215.497mil|Location2.X=37223.238mil|Location1.Y=28036.518mil|Location2.Y=28044.33mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=37215.497mil|Location2.X=37223.238mil|Location1.Y=28036.518mil|Location2.Y=28044.33mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.103mm &lt; 0.14mm) Between Pad DD4-8(24.491mm,31.682mm) on Top And Pad DD4-9(25.216mm,30.957mm) on Top [Top Solder] Mask Sliver [0.103mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=36757.983mil|Location2.X=36764.745mil|Location1.Y=27572.261mil|Location2.Y=27579.023mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\Module_FPGA_FreqDivider4layers\Synthesizer.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=36757.983mil|Location2.X=36764.745mil|Location1.Y=27572.261mil|Location2.Y=27579.023mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.101mm &lt; 0.14mm) Between Pad R16-2(13.912mm,20.156mm) on Top And Polygon Region (0 hole(s)) Top Solder [Top Solder] Mask Sliver [0.101mm]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

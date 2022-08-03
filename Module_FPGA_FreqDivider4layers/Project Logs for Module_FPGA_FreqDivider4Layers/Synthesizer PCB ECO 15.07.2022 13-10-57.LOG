@@ -1,0 +1,6 @@
+Added Pin To Net: NetName=GND Pin=R10-1
+Added Pin To Net: NetName=GND Pin=R11-1
+Added Pin To Net: NetName=GND Pin=R12-1
+Added Member To Class: ClassName=Synthesizer Member=Component R10 10k
+Added Member To Class: ClassName=Synthesizer Member=Component R11 10k
+Added Member To Class: ClassName=Synthesizer Member=Component R12 10k

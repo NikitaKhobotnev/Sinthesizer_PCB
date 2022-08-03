@@ -1,0 +1,70 @@
+Added Component: Designator=LG1(1296.1004)
+Add component (AddParameter): Name = "Category"; Value = "Прочее"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mentor-bauelemente.de/en/products/product_search/?s=1296.1004&quelle=pds&k=#starts"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Mentor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "1296.1004"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Recomended diameter (front panel)"; Value = "2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Recomended LEDs Case"; Value = "SMD 0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rule"; Value = "Polygon Connect Style [Style - Relief Connect    Width = 0.25mm    Angle = 90    # Entries = 4    Air Gap = 0.25mm    ]"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "APT1608ZGCK, APT1608ZGCK, APT1608ZGCK, APT1608ZGCK"; VariantName = "[No Variations]"
+Added Component: Designator=R17(0805 (2012))
+Add component (AddParameter): Name = "Case Code (Imperial)"; Value = "0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Code (Metric)"; Value = "2012"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Резисторы"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.samsungsem.com/kr/support/library/product-catalog/__icsFiles/afieldfile/2015/09/22/CHIP_RESISTOR_2015.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "http://www.samsungsem.com/kr/support/product-search/chip-resistor/RC2012F102CS.jsp"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.samsungsem.com/kr/support/product-search/chip-resistor/RC2012F102CS.jsp"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Composition"; Value = "Thick Film"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Plating"; Value = "Tin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Depth"; Value = "1.25mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Free"; Value = "Lead Free"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Samsung"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RC2012F102CS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "155°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Power Dissipation"; Value = "125mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Military Standard"; Value = "Not"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Coefficient"; Value = "100ppm/°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1k"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating (DC)"; Value = "150V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Разработчик"; Value = "Богатов Алексей"; VariantName = "[No Variations]"
+Added Component: Designator=R18(0805 (2012))
+Add component (AddParameter): Name = "Case Code (Imperial)"; Value = "0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Code (Metric)"; Value = "2012"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Резисторы"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.samsungsem.com/kr/support/library/product-catalog/__icsFiles/afieldfile/2015/09/22/CHIP_RESISTOR_2015.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Composition"; Value = "Thick Film"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Plating"; Value = "Tin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Depth"; Value = "1.25mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Free"; Value = "Lead Free"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Samsung"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RC2012F101CS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "155°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Power Dissipation"; Value = "125mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Military Standard"; Value = "Not"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Coefficient"; Value = "100ppm/°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating (DC)"; Value = "150V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Разработчик"; Value = "Богатов Алексей"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=LG1-2
+Added Pin To Net: NetName=GND Pin=LG1-4
+Added Pin To Net: NetName=GND Pin=LG1-6
+Added Pin To Net: NetName=GND Pin=LG1-8
+Added Pin To Net: NetName=+6V Pin=R17-1
+Added Pin To Net: NetName=LD Pin=R18-1
+Added Pin To Net: NetName=NetLG1_1 Pin=LG1-1
+Added Pin To Net: NetName=NetLG1_1 Pin=R17-2
+Added Net: Name=NetLG1_1
+Added Pin To Net: NetName=NetLG1_7 Pin=LG1-7
+Added Pin To Net: NetName=NetLG1_7 Pin=R18-2
+Added Net: Name=NetLG1_7
+Added Member To Class: ClassName=Synthesizer Member=Component LG1 1296.1004
+Added Member To Class: ClassName=Synthesizer Member=Component R17 RC2012F102CS
+Added Member To Class: ClassName=Synthesizer Member=Component R18 RC2012F101CS
+Added Rule: Name=Schematic Polygon Connect Style

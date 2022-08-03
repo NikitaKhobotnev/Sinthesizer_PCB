@@ -1,0 +1,181 @@
+Removed Pin From Net: NetName=GND Pin=XP2-MH
+Removed Pin From Net: NetName=GND Pin=XP2-MH
+Add Component: Footprint Not Found SMD 0402 (1005) max
+Add Component: Footprint Not Found SMD 0603 (1608) min
+Add Component: Footprint Not Found SMD 0603 (1608) min
+Add Component: Footprint Not Found SMD 0603 (1608) min
+Add Component: Footprint Not Found SMD 0603 (1608) min
+Add Component: Footprint Not Found SMD 0603 (1608) min
+Add Component: Footprint Not Found SMD 0603 (1608) min
+Add Component: Footprint Not Found SMD 0603 (1608) min
+Add Component: Footprint Not Found SMD 0603 (1608) min
+Add Component: Footprint Not Found SMD 0603 (1608) min
+Add Component: Footprint Not Found SMD 0603 (1608) min
+Add Component: Footprint Not Found SMD 0603 (1608) min
+Add Component: Footprint Not Found SMD 0603 (1608) min
+Add Component: Footprint Not Found SMD 0603 (1608) min
+Add Component: Footprint Not Found SMD 0603 (1608) min
+Add Component: Footprint Not Found SMD 0603 (1608) min
+Add Component: Footprint Not Found SMD 0603 (1608) min
+Add Component: Footprint Not Found SMD 0603 (1608) min
+Add Component: Footprint Not Found SMD 0603 (1608) min
+Add Component: Footprint Not Found SMD 0603 (1608) min
+Add Component: Footprint Not Found SMD 0603 (1608) min
+Add Component: Footprint Not Found SMD 0603 (1608) max
+Add Component: Footprint Not Found SMD 0603 (1608) min
+Add Component: Footprint Not Found SMD 0603 (1608) min
+Add Component: Footprint Not Found SMD 0603 (1608) min
+Add Component: Footprint Not Found SMD 0603 (1608) min
+Add Component: Footprint Not Found SMD 0603 (1608) min
+Add Component: Footprint Not Found SMD 0603 (1608) min
+Add Component: Footprint Not Found LFCSP-32  Long Pin - with VIA
+Add Component: Footprint Not Found 0805_a - long_pin
+Add Component: Footprint Not Found SOT-23-5
+Add Component: Footprint Not Found SOT-23-5
+Add Component: Footprint Not Found SOT-23-5
+Add Component: Footprint Not Found SOT-23-5
+Add Component: Footprint Not Found SOT-23-5
+Add Component: Footprint Not Found SOT-23-5
+Add Component: Footprint Not Found 0603HP
+Add Component: Footprint Not Found Resistor SMD 0603 (1608) min
+Add Component: Footprint Not Found 0603R-4K7
+Add Component: Footprint Not Found 0603R-4K7
+Add Component: Footprint Not Found 0603R-4K7
+Add Component: Footprint Not Found Resistor SMD 0603 (1608) min
+Add Component: Footprint Not Found J01151A0201
+Add Component: Footprint Not Found DIL-8
+Add Pin To Net: Unknown Pin: Pin C2-2
+Add Pin To Net: Unknown Pin: Pin C3-2
+Add Pin To Net: Unknown Pin: Pin C4-2
+Add Pin To Net: Unknown Pin: Pin C5-2
+Add Pin To Net: Unknown Pin: Pin C6-2
+Add Pin To Net: Unknown Pin: Pin C7-2
+Add Pin To Net: Unknown Pin: Pin C8-2
+Add Pin To Net: Unknown Pin: Pin C9-1
+Add Pin To Net: Unknown Pin: Pin C10-2
+Add Pin To Net: Unknown Pin: Pin C11-1
+Add Pin To Net: Unknown Pin: Pin C12-2
+Add Pin To Net: Unknown Pin: Pin C13-1
+Add Pin To Net: Unknown Pin: Pin C14-2
+Add Pin To Net: Unknown Pin: Pin C15-1
+Add Pin To Net: Unknown Pin: Pin C16-2
+Add Pin To Net: Unknown Pin: Pin C17-1
+Add Pin To Net: Unknown Pin: Pin C19-1
+Add Pin To Net: Unknown Pin: Pin C20-2
+Add Pin To Net: Unknown Pin: Pin C21-1
+Add Pin To Net: Unknown Pin: Pin C22-1
+Add Pin To Net: Unknown Pin: Pin C23-1
+Add Pin To Net: Unknown Pin: Pin C23-2
+Add Pin To Net: Unknown Pin: Pin C24-1
+Add Pin To Net: Unknown Pin: Pin C24-2
+Add Pin To Net: Unknown Pin: Pin C25-1
+Add Pin To Net: Unknown Pin: Pin C25-2
+Add Pin To Net: Unknown Pin: Pin C26-1
+Add Pin To Net: Unknown Pin: Pin C26-2
+Add Pin To Net: Unknown Pin: Pin C27-1
+Add Pin To Net: Unknown Pin: Pin C27-2
+Add Pin To Net: Unknown Pin: Pin C28-1
+Add Pin To Net: Unknown Pin: Pin C28-2
+Add Pin To Net: Unknown Pin: Pin DD1-8
+Add Pin To Net: Unknown Pin: Pin DD1-9
+Add Pin To Net: Unknown Pin: Pin DD1-11
+Add Pin To Net: Unknown Pin: Pin DD1-18
+Add Pin To Net: Unknown Pin: Pin DD1-21
+Add Pin To Net: Unknown Pin: Pin DD1-27
+Add Pin To Net: Unknown Pin: Pin DD1-31
+Add Pin To Net: Unknown Pin: Pin DD1-33
+Add Pin To Net: Unknown Pin: Pin DD2-5
+Add Pin To Net: Unknown Pin: Pin DD2-6
+Add Pin To Net: Unknown Pin: Pin DD3-3
+Add Pin To Net: Unknown Pin: Pin DD3-5
+Add Pin To Net: Unknown Pin: Pin DD4-3
+Add Pin To Net: Unknown Pin: Pin DD4-5
+Add Pin To Net: Unknown Pin: Pin DD5-3
+Add Pin To Net: Unknown Pin: Pin DD5-5
+Add Pin To Net: Unknown Pin: Pin DD6-3
+Add Pin To Net: Unknown Pin: Pin DD6-5
+Add Pin To Net: Unknown Pin: Pin DD7-3
+Add Pin To Net: Unknown Pin: Pin DD7-5
+Add Pin To Net: Unknown Pin: Pin DD8-3
+Add Pin To Net: Unknown Pin: Pin DD8-5
+Add Pin To Net: Unknown Pin: Pin R2-1
+Add Pin To Net: Unknown Pin: Pin R5-2
+Added Pin To Net: NetName=GND Pin=XP2-a16
+Add Pin To Net: Unknown Pin: Pin XW1-2
+Add Pin To Net: Unknown Pin: Pin ZQ1-3
+Added Net: Name=+3.3V
+Added Pin To Net: NetName=CLK Pin=XP2-a15
+Added Net: Name=CLK
+Added Pin To Net: NetName=DATA Pin=XP2-a13
+Added Net: Name=DATA
+Added Pin To Net: NetName=LD Pin=XP2-a10
+Added Net: Name=LD
+Added Pin To Net: NetName=LE Pin=XP2-a12
+Added Net: Name=LE
+Added Pin To Net: NetName=MUXOUT Pin=XP2-a14
+Added Net: Name=MUXOUT
+Added Net: Name=NetC1_2
+Added Net: Name=NetC2_1
+Added Net: Name=NetC4_1
+Added Net: Name=NetC6_1
+Added Net: Name=NetC18_1
+Added Net: Name=NetC18_2
+Added Net: Name=NetC19_2
+Added Net: Name=NetDD1_5
+Added Net: Name=NetDD1_22
+Added Net: Name=NetDD2_1
+Added Net: Name=NetDD2_2
+Added Net: Name=REF_IN
+Added Net: Name=RFOutA_N
+Added Net: Name=RFOutA_P
+Added Net: Name=SW
+Added Differential Pair: Name=RFOutA
+Add Class Member: Failed to add class member : Component C1 Capacitors
+Add Class Member: Failed to add class member : Component C2 Capacitors
+Add Class Member: Failed to add class member : Component C3 Capacitors
+Add Class Member: Failed to add class member : Component C4 Capacitors
+Add Class Member: Failed to add class member : Component C5 Capacitors
+Add Class Member: Failed to add class member : Component C6 Capacitors
+Add Class Member: Failed to add class member : Component C7 Capacitors
+Add Class Member: Failed to add class member : Component C8 Capacitors
+Add Class Member: Failed to add class member : Component C9 Capacitors
+Add Class Member: Failed to add class member : Component C10 Capacitors
+Add Class Member: Failed to add class member : Component C11 Capacitors
+Add Class Member: Failed to add class member : Component C12 Capacitors
+Add Class Member: Failed to add class member : Component C13 Capacitors
+Add Class Member: Failed to add class member : Component C14 Capacitors
+Add Class Member: Failed to add class member : Component C15 Capacitors
+Add Class Member: Failed to add class member : Component C16 Capacitors
+Add Class Member: Failed to add class member : Component C17 Capacitors
+Add Class Member: Failed to add class member : Component C18 Capacitors
+Add Class Member: Failed to add class member : Component C19 Capacitors
+Add Class Member: Failed to add class member : Component C20 Capacitors
+Add Class Member: Failed to add class member : Component C21 Capacitors
+Add Class Member: Failed to add class member : Component C22 Capacitors
+Add Class Member: Failed to add class member : Component C23 Capacitors
+Add Class Member: Failed to add class member : Component C24 Capacitors
+Add Class Member: Failed to add class member : Component C25 Capacitors
+Add Class Member: Failed to add class member : Component C26 Capacitors
+Add Class Member: Failed to add class member : Component C27 Capacitors
+Add Class Member: Failed to add class member : Component C28 Capacitors
+Add Class Member: Failed to add class member : Component DD1 ADF4351BCPZ
+Add Class Member: Failed to add class member : Component DD2 BD1631J50100AHF
+Add Class Member: Failed to add class member : Component DD3 SN74AHCT1G125DBVR
+Add Class Member: Failed to add class member : Component DD4 SN74AHCT1G125DBVR
+Add Class Member: Failed to add class member : Component DD5 SN74AHCT1G125DBVR
+Add Class Member: Failed to add class member : Component DD6 SN74AHCT1G125DBVR
+Add Class Member: Failed to add class member : Component DD7 SN74AHCT1G125DBVR
+Add Class Member: Failed to add class member : Component DD8 SN74AHCT1G125DBVR
+Add Class Member: Failed to add class member : Component L1 0603HP-18NXJE
+Add Class Member: Failed to add class member : Component R1 Resistor
+Add Class Member: Failed to add class member : Component R2 4K7
+Add Class Member: Failed to add class member : Component R3 680
+Add Class Member: Failed to add class member : Component R4 120
+Add Class Member: Failed to add class member : Component R5 Resistor
+Added Member To Class: ClassName=Synthesizer Member=Component XP2 09 23 148 6921
+Add Class Member: Failed to add class member : Component XW1 J01151A0201
+Add Class Member: Failed to add class member : Component ZQ1 √ 1010-TK
+Added Member To Class: ClassName=50_Om Member=Wire NetDD2_1
+Added Member To Class: ClassName=50_Om Member=Wire RFOutA_N
+Added Member To Class: ClassName=50_Om Member=Wire RFOutA_P
+Added Room: Name=Synthesizer

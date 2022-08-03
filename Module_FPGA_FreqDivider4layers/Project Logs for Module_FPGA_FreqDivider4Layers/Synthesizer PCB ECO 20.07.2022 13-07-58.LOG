@@ -1,0 +1,13 @@
+Removed Pin From Net: NetName=+6V Pin=R17-1
+Removed Pin From Net: NetName=NetLG1_1 Pin=R17-2
+Removed Pin From Net: NetName=LD Pin=R18-1
+Removed Member From Class: ClassName=Synthesizer Member=R17
+Removed Member From Class: ClassName=Synthesizer Member=R18
+Added Component: Designator=R?(Resistor MLT 0.5W Horizontal)
+Add component (AddParameter): Name = "Category"; Value = "Резисторы"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1k"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+6V Pin=R?-1
+Added Pin To Net: NetName=NetLG1_1 Pin=R?-2
+Added Member To Class: ClassName=Synthesizer Member=Component R? Resistor

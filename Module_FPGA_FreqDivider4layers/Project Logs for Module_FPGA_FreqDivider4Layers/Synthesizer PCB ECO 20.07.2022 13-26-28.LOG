@@ -1,0 +1,25 @@
+Removed Pin From Net: NetName=+6V Pin=R?-1
+Removed Pin From Net: NetName=NetLG1_1 Pin=R?-2
+Removed Member From Class: ClassName=Synthesizer Member=R?
+Add Component: Footprint Not Found 0603R-0R
+Add Component: Footprint Not Found 0603R-0R
+Add Component: Footprint Not Found 0603R-0R
+Add Component: Footprint Not Found 0603R-0R
+Add Pin To Net: Unknown Pin: Pin R17-1
+Add Pin To Net: Unknown Pin: Pin R17-2
+Added Pin To Net: NetName=LED_1 Pin=XP2-c6
+Added Net: Name=LED_1
+Added Pin To Net: NetName=LED_2 Pin=XP2-c8
+Added Net: Name=LED_2
+Added Pin To Net: NetName=LED_3 Pin=XP2-c10
+Added Net: Name=LED_3
+Added Pin To Net: NetName=NetLG1_3 Pin=LG1-3
+Added Net: Name=NetLG1_3
+Added Pin To Net: NetName=NetLG1_5 Pin=LG1-5
+Added Net: Name=NetLG1_5
+Added Pin To Net: NetName=NetLG1_7 Pin=LG1-7
+Added Net: Name=NetLG1_7
+Add Class Member: Failed to add class member : Component R17 10k
+Add Class Member: Failed to add class member : Component R18 0
+Add Class Member: Failed to add class member : Component R19 0
+Add Class Member: Failed to add class member : Component R20 0

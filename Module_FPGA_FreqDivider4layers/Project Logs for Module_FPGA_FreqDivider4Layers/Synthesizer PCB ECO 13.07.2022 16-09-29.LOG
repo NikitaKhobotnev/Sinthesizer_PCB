@@ -1,0 +1,59 @@
+Added Pin To Net: NetName=GND Pin=C23-1
+Added Pin To Net: NetName=+6V Pin=C23-2
+Added Pin To Net: NetName=GND Pin=C24-1
+Added Pin To Net: NetName=+3.3V Pin=C24-2
+Added Pin To Net: NetName=GND Pin=U1-1
+Added Pin To Net: NetName=+3.3V Pin=U1-2
+Added Pin To Net: NetName=+3.3V Pin=U1-2
+Added Pin To Net: NetName=+6V Pin=U1-3
+Added Pin To Net: NetName=GND Pin=XW1-2
+Added Pin To Net: NetName=GND Pin=XW1-2
+Added Pin To Net: NetName=GND Pin=XW1-2
+Added Pin To Net: NetName=GND Pin=XW1-2
+Added Member To Class: ClassName=Synthesizer Member=Component C1 Capacitors
+Added Member To Class: ClassName=Synthesizer Member=Component C2 Capacitors
+Added Member To Class: ClassName=Synthesizer Member=Component C3 Capacitors
+Added Member To Class: ClassName=Synthesizer Member=Component C4 Capacitors
+Added Member To Class: ClassName=Synthesizer Member=Component C5 Capacitors
+Added Member To Class: ClassName=Synthesizer Member=Component C6 Capacitors
+Added Member To Class: ClassName=Synthesizer Member=Component C7 Capacitors
+Added Member To Class: ClassName=Synthesizer Member=Component C8 Capacitors
+Added Member To Class: ClassName=Synthesizer Member=Component C9 Capacitors
+Added Member To Class: ClassName=Synthesizer Member=Component C10 Capacitors
+Added Member To Class: ClassName=Synthesizer Member=Component C11 Capacitors
+Added Member To Class: ClassName=Synthesizer Member=Component C12 Capacitors
+Added Member To Class: ClassName=Synthesizer Member=Component C13 Capacitors
+Added Member To Class: ClassName=Synthesizer Member=Component C14 Capacitors
+Added Member To Class: ClassName=Synthesizer Member=Component C15 Capacitors
+Added Member To Class: ClassName=Synthesizer Member=Component C16 Capacitors
+Added Member To Class: ClassName=Synthesizer Member=Component C17 Capacitors
+Added Member To Class: ClassName=Synthesizer Member=Component C18 Capacitors
+Added Member To Class: ClassName=Synthesizer Member=Component C19 Capacitors
+Added Member To Class: ClassName=Synthesizer Member=Component C20 Capacitors
+Added Member To Class: ClassName=Synthesizer Member=Component C21 Capacitors
+Added Member To Class: ClassName=Synthesizer Member=Component C22 Capacitors
+Added Member To Class: ClassName=Synthesizer Member=Component C23 VJ0805Y104KXBTW1BC
+Added Member To Class: ClassName=Synthesizer Member=Component C24 VJ0805V106ZXQTW1BC
+Added Member To Class: ClassName=Synthesizer Member=Component C25 100A101JT150XT
+Added Member To Class: ClassName=Synthesizer Member=Component C26 100A101JT150XT
+Added Member To Class: ClassName=Synthesizer Member=Component C27 100A101JT150XT
+Added Member To Class: ClassName=Synthesizer Member=Component C28 VJ0603Y104KXAAC
+Added Member To Class: ClassName=Synthesizer Member=Component DD1 ADF4351BCPZ
+Added Member To Class: ClassName=Synthesizer Member=Component DD2 BD1631J50100AHF
+Added Member To Class: ClassName=Synthesizer Member=Component DD3 AG303-86G
+Added Member To Class: ClassName=Synthesizer Member=Component L1 0603HP-18NXJE
+Added Member To Class: ClassName=Synthesizer Member=Component L2 0603HP-18NXJE
+Added Member To Class: ClassName=Synthesizer Member=Component R1 Resistor
+Added Member To Class: ClassName=Synthesizer Member=Component R2 4K7
+Added Member To Class: ClassName=Synthesizer Member=Component R3 680
+Added Member To Class: ClassName=Synthesizer Member=Component R4 120
+Added Member To Class: ClassName=Synthesizer Member=Component R5 Resistor
+Added Member To Class: ClassName=Synthesizer Member=Component R6 51R
+Added Member To Class: ClassName=Synthesizer Member=Component R7 100R
+Added Member To Class: ClassName=Synthesizer Member=Component R8 100R
+Added Member To Class: ClassName=Synthesizer Member=Component R9 100R
+Added Member To Class: ClassName=Synthesizer Member=Component U1 LD1117S33TR
+Added Member To Class: ClassName=Synthesizer Member=Component XP2 09 23 148 6921
+Added Member To Class: ClassName=Synthesizer Member=Component XW1 J01151A0201
+Added Member To Class: ClassName=Synthesizer Member=Component ZQ1 √ 1010-TK
+Added Room: Name=Synthesizer

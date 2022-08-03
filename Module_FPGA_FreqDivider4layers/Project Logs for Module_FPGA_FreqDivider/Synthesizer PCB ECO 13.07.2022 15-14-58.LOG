@@ -1,0 +1,48 @@
+Removed Pin From Net: NetName=GND Pin=C23-1
+Removed Pin From Net: NetName=+6V Pin=C23-2
+Removed Pin From Net: NetName=GND Pin=C24-1
+Removed Pin From Net: NetName=+3.3V Pin=C24-2
+Removed Pin From Net: NetName=GND Pin=U1-1
+Removed Pin From Net: NetName=+3.3V Pin=U1-2
+Removed Pin From Net: NetName=+3.3V Pin=U1-2
+Removed Pin From Net: NetName=+6V Pin=U1-3
+Removed Pin From Net: NetName=GND Pin=XW1-2
+Removed Pin From Net: NetName=GND Pin=XW1-2
+Removed Pin From Net: NetName=GND Pin=XW1-2
+Removed Pin From Net: NetName=GND Pin=XW1-2
+Removed Member From Class: ClassName=50_Om Member=NetDD2_1
+Added Pin To Net: NetName=GND Pin=C27-2
+Added Pin To Net: NetName=GND Pin=C28-2
+Added Pin To Net: NetName=GND Pin=DD3-2
+Added Pin To Net: NetName=GND Pin=DD3-4
+Added Pin To Net: NetName=+6V Pin=R6-2
+Added Pin To Net: NetName=GND Pin=R8-1
+Added Pin To Net: NetName=GND Pin=R9-2
+Added Pin To Net: NetName=NetC25_1 Pin=C25-1
+Added Pin To Net: NetName=NetC25_1 Pin=C25-2
+Added Pin To Net: NetName=NetC25_1 Pin=DD2-1
+Added Pin To Net: NetName=NetC25_1 Pin=DD3-1
+Added Net: Name=NetC25_1
+Added Pin To Net: NetName=NetC26_1 Pin=C26-1
+Added Pin To Net: NetName=NetC26_1 Pin=DD3-3
+Added Pin To Net: NetName=NetC26_1 Pin=L2-1
+Added Net: Name=NetC26_1
+Added Pin To Net: NetName=NetC26_2 Pin=C26-2
+Added Pin To Net: NetName=NetC26_2 Pin=R7-1
+Added Pin To Net: NetName=NetC26_2 Pin=R8-2
+Added Net: Name=NetC26_2
+Added Pin To Net: NetName=NetC27_1 Pin=C27-1
+Added Pin To Net: NetName=NetC27_1 Pin=C28-1
+Added Pin To Net: NetName=NetC27_1 Pin=L2-2
+Added Pin To Net: NetName=NetC27_1 Pin=R6-1
+Added Net: Name=NetC27_1
+Added Pin To Net: NetName=NetR7_2 Pin=R7-2
+Added Pin To Net: NetName=NetR7_2 Pin=R9-1
+Added Net: Name=NetR7_2
+Added Member To Class: ClassName=Synthesizer Member=Component DD3 AG303-86G
+Added Member To Class: ClassName=Synthesizer Member=Component L2 0603HP-18NXJE
+Added Member To Class: ClassName=Synthesizer Member=Component R6 51R
+Added Member To Class: ClassName=Synthesizer Member=Component R7 100R
+Added Member To Class: ClassName=Synthesizer Member=Component R8 100R
+Added Member To Class: ClassName=Synthesizer Member=Component R9 100R
+Added Room: Name=Synthesizer

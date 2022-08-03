@@ -1,0 +1,408 @@
+Removed Pin From Net: NetName=+6V Pin=XP2-a1
+Removed Pin From Net: NetName=GND Pin=XP2-a2
+Removed Pin From Net: NetName=GND Pin=XP2-a4
+Removed Pin From Net: NetName=GND Pin=XP2-a5
+Removed Pin From Net: NetName=+6V Pin=XP2-b1
+Removed Pin From Net: NetName=GND Pin=XP2-b2
+Removed Pin From Net: NetName=GND Pin=XP2-b4
+Removed Pin From Net: NetName=GND Pin=XP2-b5
+Removed Pin From Net: NetName=+6V Pin=XP2-c1
+Removed Pin From Net: NetName=GND Pin=XP2-c2
+Removed Pin From Net: NetName=GND Pin=XP2-c4
+Removed Pin From Net: NetName=GND Pin=XP2-c5
+Removed Pin From Net: NetName=GND Pin=XP2-MH
+Removed Pin From Net: NetName=GND Pin=XP2-MH
+Add Component: Footprint Not Found SMD 0402 (1005) max
+Add Component: Footprint Not Found SMD 0603 (1608) min
+Add Component: Footprint Not Found SMD 0603 (1608) min
+Add Component: Footprint Not Found SMD 0603 (1608) min
+Add Component: Footprint Not Found SMD 0603 (1608) min
+Add Component: Footprint Not Found SMD 0603 (1608) min
+Add Component: Footprint Not Found SMD 0603 (1608) min
+Add Component: Footprint Not Found SMD 0603 (1608) min
+Add Component: Footprint Not Found SMD 0603 (1608) min
+Add Component: Footprint Not Found SMD 0603 (1608) min
+Add Component: Footprint Not Found SMD 0603 (1608) min
+Add Component: Footprint Not Found SMD 0603 (1608) min
+Add Component: Footprint Not Found SMD 0603 (1608) min
+Add Component: Footprint Not Found SMD 0603 (1608) min
+Add Component: Footprint Not Found SMD 0603 (1608) min
+Add Component: Footprint Not Found SMD 0603 (1608) min
+Add Component: Footprint Not Found SMD 0603 (1608) min
+Add Component: Footprint Not Found SMD 0603 (1608) min
+Add Component: Footprint Not Found SMD 0603 (1608) min
+Add Component: Footprint Not Found SMD 0603 (1608) min
+Add Component: Footprint Not Found SMD 0603 (1608) min
+Add Component: Footprint Not Found SMD 0603 (1608) max
+Add Component: Footprint Not Found SMD 0603 (1608) min
+Add Component: Footprint Not Found SMD 0603 (1608) min
+Add Component: Footprint Not Found SMD 0603 (1608) min
+Add Component: Footprint Not Found SMD 0603 (1608) min
+Add Component: Footprint Not Found SMD 0603 (1608) min
+Add Component: Footprint Not Found SMD 0603 (1608) min
+Added Component: Designator=DD1(LFCSP-32  Long Pin - with VIA)
+Add component (AddParameter): Name = "Case/Package"; Value = "LFCSP-32"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Микросхемы"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.analog.com/media/en/technical-documentation/data-sheets/ADF4351.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://ru.mouser.com/ProductDetail/Analog-Devices/ADF4351BCPZ?qs=BpaRKvA4VqFCiUOrGPcIQw%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Frequency"; Value = "4.4GHz"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Input"; Value = "CMOS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Interface"; Value = "SPI"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Analog Devices"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "ADF4351BCPZ"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Frequency"; Value = "4.4GHz"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "85°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Supply Voltage"; Value = "3V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Nominal Supply Current"; Value = "110mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Supply Voltage"; Value = "3.3V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PLL"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Разработчик"; Value = "Леткин Д.С."; VariantName = "[No Variations]"
+Add Component: Footprint Not Found 0805_a - long_pin
+Added Component: Designator=DD3(SOT-23-5)
+Add component (AddParameter): Name = "Base Part Number"; Value = "74AHCT1G125"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Микросхемы"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.ti.com/lit/ds/symlink/sn74ahct1g125.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current - Output High, Low"; Value = "8mA, 8mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Input Type"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Logic Type"; Value = "Buffer, Non-Inverting"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "SN74AHCT1G125DBVR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Type"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Bits per Element"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature"; Value = "-40°C ~ 125°C (TA)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Output Type"; Value = "Push-Pull"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package / Case"; Value = "SC-74A, SOT-753"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape & Reel (TR)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Status"; Value = "Active"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "3000=0.0918, 6000=0.0867, 15000=0.07905 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "RoHS Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "30000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Device Package"; Value = "SOT-23-5"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "296-4708-2-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage - Supply"; Value = "4.5 V ~ 5.5 V"; VariantName = "[No Variations]"
+Added Component: Designator=DD4(SOT-23-5)
+Add component (AddParameter): Name = "Base Part Number"; Value = "74AHCT1G125"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Микросхемы"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.ti.com/lit/ds/symlink/sn74ahct1g125.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current - Output High, Low"; Value = "8mA, 8mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Input Type"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Logic Type"; Value = "Buffer, Non-Inverting"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "SN74AHCT1G125DBVR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Type"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Bits per Element"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature"; Value = "-40°C ~ 125°C (TA)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Output Type"; Value = "Push-Pull"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package / Case"; Value = "SC-74A, SOT-753"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape & Reel (TR)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Status"; Value = "Active"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "3000=0.0918, 6000=0.0867, 15000=0.07905 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "RoHS Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "30000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Device Package"; Value = "SOT-23-5"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "296-4708-2-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage - Supply"; Value = "4.5 V ~ 5.5 V"; VariantName = "[No Variations]"
+Added Component: Designator=DD5(SOT-23-5)
+Add component (AddParameter): Name = "Base Part Number"; Value = "74AHCT1G125"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Микросхемы"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.ti.com/lit/ds/symlink/sn74ahct1g125.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current - Output High, Low"; Value = "8mA, 8mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Input Type"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Logic Type"; Value = "Buffer, Non-Inverting"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "SN74AHCT1G125DBVR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Type"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Bits per Element"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature"; Value = "-40°C ~ 125°C (TA)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Output Type"; Value = "Push-Pull"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package / Case"; Value = "SC-74A, SOT-753"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape & Reel (TR)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Status"; Value = "Active"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "3000=0.0918, 6000=0.0867, 15000=0.07905 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "RoHS Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "30000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Device Package"; Value = "SOT-23-5"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "296-4708-2-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage - Supply"; Value = "4.5 V ~ 5.5 V"; VariantName = "[No Variations]"
+Added Component: Designator=DD6(SOT-23-5)
+Add component (AddParameter): Name = "Base Part Number"; Value = "74AHCT1G125"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Микросхемы"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.ti.com/lit/ds/symlink/sn74ahct1g125.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current - Output High, Low"; Value = "8mA, 8mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Input Type"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Logic Type"; Value = "Buffer, Non-Inverting"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "SN74AHCT1G125DBVR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Type"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Bits per Element"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature"; Value = "-40°C ~ 125°C (TA)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Output Type"; Value = "Push-Pull"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package / Case"; Value = "SC-74A, SOT-753"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape & Reel (TR)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Status"; Value = "Active"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "3000=0.0918, 6000=0.0867, 15000=0.07905 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "RoHS Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "30000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Device Package"; Value = "SOT-23-5"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "296-4708-2-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage - Supply"; Value = "4.5 V ~ 5.5 V"; VariantName = "[No Variations]"
+Added Component: Designator=DD7(SOT-23-5)
+Add component (AddParameter): Name = "Base Part Number"; Value = "74AHCT1G125"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Микросхемы"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.ti.com/lit/ds/symlink/sn74ahct1g125.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current - Output High, Low"; Value = "8mA, 8mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Input Type"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Logic Type"; Value = "Buffer, Non-Inverting"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "SN74AHCT1G125DBVR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Type"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Bits per Element"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature"; Value = "-40°C ~ 125°C (TA)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Output Type"; Value = "Push-Pull"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package / Case"; Value = "SC-74A, SOT-753"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape & Reel (TR)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Status"; Value = "Active"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "3000=0.0918, 6000=0.0867, 15000=0.07905 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "RoHS Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "30000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Device Package"; Value = "SOT-23-5"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "296-4708-2-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage - Supply"; Value = "4.5 V ~ 5.5 V"; VariantName = "[No Variations]"
+Added Component: Designator=DD8(SOT-23-5)
+Add component (AddParameter): Name = "Base Part Number"; Value = "74AHCT1G125"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Микросхемы"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.ti.com/lit/ds/symlink/sn74ahct1g125.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current - Output High, Low"; Value = "8mA, 8mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Input Type"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Logic Type"; Value = "Buffer, Non-Inverting"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "SN74AHCT1G125DBVR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Type"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Bits per Element"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature"; Value = "-40°C ~ 125°C (TA)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Output Type"; Value = "Push-Pull"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package / Case"; Value = "SC-74A, SOT-753"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape & Reel (TR)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Status"; Value = "Active"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "3000=0.0918, 6000=0.0867, 15000=0.07905 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "RoHS Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "30000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Device Package"; Value = "SOT-23-5"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "296-4708-2-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage - Supply"; Value = "4.5 V ~ 5.5 V"; VariantName = "[No Variations]"
+Added Component: Designator=L1(0603HP)
+Add component (AddParameter): Name = "Category"; Value = "Катушки индуктивности"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.coilcraft.com/pdfs/0603hp.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Coilcraft"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.coilcraft.com/0603hp.cfm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Coilcraft"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "0603HP-18NXJE"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Разработчик"; Value = "Леткин Д.С."; VariantName = "[No Variations]"
+Add Component: Footprint Not Found Resistor SMD 0603 (1608) min
+Add Component: Footprint Not Found 0603R-4K7
+Add Component: Footprint Not Found 0603R-4K7
+Add Component: Footprint Not Found 0603R-4K7
+Add Component: Footprint Not Found Resistor SMD 0603 (1608) min
+Added Component: Designator=XP1(09 23 148 6921)
+Add component (AddParameter): Name = "Category"; Value = "Разъёмы"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://b2b.harting.com/files/download/PRD/PDF_DS/09031200201_100580147DRW000B.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Connector Type"; Value = "Header, Male Pins"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Finish"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Finish Thickness"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Features"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Function"; Value = "просто так"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://b2b.harting.com/ebusiness/en_us/DIN-Signal-2C048MS-1C1-2/09231486921"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "HARTING"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "09231486921"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Material - Insulation"; Value = "Thermoplastic resin, Glass-fibre Filled"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Material Flammability Rating"; Value = "UL94 V-0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Type"; Value = "Through Hole, Right Angle"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Positions"; Value = "48"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Positions Loaded"; Value = "All"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Bulk"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging size"; Value = "20"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Status"; Value = "Active"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "0.100" (2.54mm)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "RoHS Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Style"; Value = "C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Termination"; Value = "Solder"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Разработчик"; Value = "Леткин Д."; VariantName = "[No Variations]"
+Added Component: Designator=XW1(J01151A0201)
+Add component (AddParameter): Name = "Category"; Value = "Разъёмы"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "https://www.alliedelec.com/m/d/98f426e0d5bb6ee5532bde4cab502770.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.alliedelec.com/m/d/98f426e0d5bb6ee5532bde4cab502770.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "https://www.alliedelec.com/-j01151a0201/70884022/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.alliedelec.com/-j01151a0201/70884022/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Telegartner"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "J01151A0201"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=11.2500 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "509"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Allied"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "70884022"; VariantName = "[No Variations]"
+Added Component: Designator=ZQ?(DIL-8)
+Add component (AddParameter): Name = "Case/Package"; Value = "DIL 8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Фильтры"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://bmgplus.ru/images/pdf/pdf1010_tcxo.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "БМГ ПЛЮС"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "ГК1010-TK"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Джиттер, пс"; Value = "0,8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Нагрузка, пФ"; Value = "15"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Питание,В"; Value = "3.3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Потребляемый ток, мA"; Value = "35"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Разработчик"; Value = "Леткин Д.С."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Частота, МГц"; Value = "10 - 250"; VariantName = "[No Variations]"
+Add Pin To Net: Unknown Pin: Pin C2-2
+Add Pin To Net: Unknown Pin: Pin C3-2
+Add Pin To Net: Unknown Pin: Pin C4-2
+Add Pin To Net: Unknown Pin: Pin C5-2
+Add Pin To Net: Unknown Pin: Pin C6-2
+Add Pin To Net: Unknown Pin: Pin C7-2
+Add Pin To Net: Unknown Pin: Pin C8-2
+Add Pin To Net: Unknown Pin: Pin C9-1
+Add Pin To Net: Unknown Pin: Pin C10-2
+Add Pin To Net: Unknown Pin: Pin C11-1
+Add Pin To Net: Unknown Pin: Pin C12-2
+Add Pin To Net: Unknown Pin: Pin C13-1
+Add Pin To Net: Unknown Pin: Pin C14-2
+Add Pin To Net: Unknown Pin: Pin C15-1
+Add Pin To Net: Unknown Pin: Pin C16-2
+Add Pin To Net: Unknown Pin: Pin C17-1
+Add Pin To Net: Unknown Pin: Pin C19-1
+Add Pin To Net: Unknown Pin: Pin C20-2
+Add Pin To Net: Unknown Pin: Pin C21-1
+Add Pin To Net: Unknown Pin: Pin C22-1
+Add Pin To Net: Unknown Pin: Pin C23-1
+Add Pin To Net: Unknown Pin: Pin C23-2
+Add Pin To Net: Unknown Pin: Pin C24-1
+Add Pin To Net: Unknown Pin: Pin C24-2
+Add Pin To Net: Unknown Pin: Pin C25-1
+Add Pin To Net: Unknown Pin: Pin C25-2
+Add Pin To Net: Unknown Pin: Pin C26-1
+Add Pin To Net: Unknown Pin: Pin C26-2
+Add Pin To Net: Unknown Pin: Pin C27-1
+Add Pin To Net: Unknown Pin: Pin C27-2
+Add Pin To Net: Unknown Pin: Pin C28-1
+Add Pin To Net: Unknown Pin: Pin C28-2
+Added Pin To Net: NetName=GND Pin=DD1-8
+Added Pin To Net: NetName=GND Pin=DD1-9
+Added Pin To Net: NetName=GND Pin=DD1-11
+Added Pin To Net: NetName=GND Pin=DD1-18
+Added Pin To Net: NetName=GND Pin=DD1-21
+Added Pin To Net: NetName=GND Pin=DD1-27
+Added Pin To Net: NetName=GND Pin=DD1-31
+Added Pin To Net: NetName=GND Pin=DD1-33
+Add Pin To Net: Unknown Pin: Pin DD2-5
+Add Pin To Net: Unknown Pin: Pin DD2-6
+Added Pin To Net: NetName=GND Pin=DD3-3
+Added Pin To Net: NetName=+6V Pin=DD3-5
+Added Pin To Net: NetName=GND Pin=DD4-3
+Added Pin To Net: NetName=+6V Pin=DD4-5
+Added Pin To Net: NetName=GND Pin=DD5-3
+Added Pin To Net: NetName=+6V Pin=DD5-5
+Added Pin To Net: NetName=GND Pin=DD6-3
+Added Pin To Net: NetName=+6V Pin=DD6-5
+Added Pin To Net: NetName=GND Pin=DD7-3
+Added Pin To Net: NetName=+6V Pin=DD7-5
+Added Pin To Net: NetName=GND Pin=DD8-3
+Added Pin To Net: NetName=+6V Pin=DD8-5
+Add Pin To Net: Unknown Pin: Pin R2-1
+Add Pin To Net: Unknown Pin: Pin R5-2
+Added Pin To Net: NetName=+6V Pin=XP1-a1
+Added Pin To Net: NetName=GND Pin=XP1-a2
+Added Pin To Net: NetName=GND Pin=XP1-a4
+Added Pin To Net: NetName=GND Pin=XP1-a5
+Added Pin To Net: NetName=GND Pin=XP1-a16
+Added Pin To Net: NetName=+6V Pin=XP1-b1
+Added Pin To Net: NetName=GND Pin=XP1-b2
+Added Pin To Net: NetName=GND Pin=XP1-b4
+Added Pin To Net: NetName=GND Pin=XP1-b5
+Added Pin To Net: NetName=+6V Pin=XP1-c1
+Added Pin To Net: NetName=GND Pin=XP1-c2
+Added Pin To Net: NetName=GND Pin=XP1-c4
+Added Pin To Net: NetName=GND Pin=XP1-c5
+Added Pin To Net: NetName=GND Pin=XW1-2
+Added Pin To Net: NetName=GND Pin=XW1-2
+Added Pin To Net: NetName=GND Pin=XW1-2
+Added Pin To Net: NetName=GND Pin=XW1-2
+Added Pin To Net: NetName=GND Pin=ZQ?-3
+Added Pin To Net: NetName=+3.3V Pin=DD1-4
+Added Pin To Net: NetName=+3.3V Pin=DD1-6
+Added Pin To Net: NetName=+3.3V Pin=DD1-10
+Added Pin To Net: NetName=+3.3V Pin=DD1-16
+Added Pin To Net: NetName=+3.3V Pin=DD1-17
+Added Pin To Net: NetName=+3.3V Pin=DD1-26
+Added Pin To Net: NetName=+3.3V Pin=DD1-28
+Added Pin To Net: NetName=+3.3V Pin=DD1-32
+Added Pin To Net: NetName=+3.3V Pin=L1-2
+Added Pin To Net: NetName=+3.3V Pin=ZQ?-2
+Added Pin To Net: NetName=+3.3V Pin=ZQ?-6
+Added Net: Name=+3.3V
+Added Pin To Net: NetName=CLK Pin=DD1-1
+Added Pin To Net: NetName=CLK Pin=XP1-a15
+Added Net: Name=CLK
+Added Pin To Net: NetName=DATA Pin=DD1-2
+Added Pin To Net: NetName=DATA Pin=XP1-a13
+Added Net: Name=DATA
+Added Pin To Net: NetName=LD Pin=DD1-25
+Added Pin To Net: NetName=LD Pin=XP1-a10
+Added Net: Name=LD
+Added Pin To Net: NetName=LE Pin=DD1-3
+Added Pin To Net: NetName=LE Pin=XP1-a11
+Added Net: Name=LE
+Added Pin To Net: NetName=MUXOUT Pin=DD1-30
+Added Pin To Net: NetName=MUXOUT Pin=XP1-a14
+Added Net: Name=MUXOUT
+Added Pin To Net: NetName=NetC1_2 Pin=DD1-29
+Added Net: Name=NetC1_2
+Added Pin To Net: NetName=NetC2_1 Pin=DD1-19
+Added Net: Name=NetC2_1
+Added Pin To Net: NetName=NetC4_1 Pin=DD1-23
+Added Net: Name=NetC4_1
+Added Pin To Net: NetName=NetC6_1 Pin=DD1-24
+Added Net: Name=NetC6_1
+Added Pin To Net: NetName=NetC18_1 Pin=DD1-7
+Added Net: Name=NetC18_1
+Added Net: Name=NetC18_2
+Added Pin To Net: NetName=NetC19_2 Pin=DD1-20
+Added Net: Name=NetC19_2
+Added Pin To Net: NetName=NetDD1_5 Pin=DD1-5
+Added Net: Name=NetDD1_5
+Added Pin To Net: NetName=NetDD1_22 Pin=DD1-22
+Added Net: Name=NetDD1_22
+Added Pin To Net: NetName=NetDD2_1 Pin=XW1-1
+Added Net: Name=NetDD2_1
+Added Pin To Net: NetName=NetDD2_2 Pin=L1-1
+Added Net: Name=NetDD2_2
+Added Pin To Net: NetName=REF_IN Pin=ZQ?-4
+Added Net: Name=REF_IN
+Added Pin To Net: NetName=RFOutA_N Pin=DD1-13
+Added Net: Name=RFOutA_N
+Added Pin To Net: NetName=RFOutA_P Pin=DD1-12
+Added Net: Name=RFOutA_P
+Added Net: Name=SW
+Added Class: Name=Synthesizer
+Added Class: Name=50_Om
+Added Differential Pair: Name=RFOutA
+Added Room: Name=Synthesizer

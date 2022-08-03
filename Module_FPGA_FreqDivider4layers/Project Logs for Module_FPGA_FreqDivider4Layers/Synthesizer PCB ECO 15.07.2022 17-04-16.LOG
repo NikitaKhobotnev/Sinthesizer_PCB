@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=GND Pin=XW3-2
+Removed Pin From Net: NetName=GND Pin=XW3-2
+Removed Pin From Net: NetName=GND Pin=XW3-2
+Removed Pin From Net: NetName=GND Pin=XW3-2
+Removed Member From Class: ClassName=Synthesizer Member=XW3
+Removed Member From Class: ClassName=50_Om Member=NetR14_2
+Added Pin To Net: NetName=SYNC Pin=R14-2
+Added Pin To Net: NetName=SYNC Pin=XP2-a8
+Added Net: Name=SYNC
+Added Member To Class: ClassName=50_Om Member=Wire SYNC

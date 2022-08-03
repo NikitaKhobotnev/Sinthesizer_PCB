@@ -1,0 +1,14 @@
+Added Component: Designator=XW1(J01151A0201)
+Add component (AddParameter): Name = "Category"; Value = "Ðàçú¸ìû"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "https://www.alliedelec.com/m/d/98f426e0d5bb6ee5532bde4cab502770.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.alliedelec.com/m/d/98f426e0d5bb6ee5532bde4cab502770.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "https://www.alliedelec.com/-j01151a0201/70884022/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.alliedelec.com/-j01151a0201/70884022/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Telegartner"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "J01151A0201"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=11.2500 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "509"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Allied"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "70884022"; VariantName = "[No Variations]"
+Added Member To Class: ClassName=Synthesizer Member=Component XW1 J01151A0201

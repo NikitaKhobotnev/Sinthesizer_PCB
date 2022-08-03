@@ -1,0 +1,7 @@
+Change Component Footprint: Designator=R? Old Footprint=Resistor MLT 0.5W Horizontal New Footprint=ÒÂÎ-2
+Change Component Comment : Designator=R? Old Comment=Resistor New Comment=ÒÂÎ
+Change component parameters: Designator = "R?" ("R?"); Footprint = "Resistor MLT 0.5W Horizontal"; UniqueID = "\BBCUIRAQ" ("\BBCUIRAQ")
+Change component parameters (AddParameter): Name = "Category"; Value = "Ðåçèñòîðû"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "ÒÂÎ"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "±10%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "1k"; VariantName = "[No Variations]"
